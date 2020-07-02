@@ -176,10 +176,28 @@ input.toggle:checked::after{
   .subtitle.flex{
     display:block;
   }
-  #dark-mode-toggle{
+  .toggle-container{
     display:block;
   }
   input.toggle:hover{
-  background-color: l#aeb3cb;
+  background-color: #aeb3cb;
+  }
 }
+/*Dark Mode starts here*/
+body.dt{
+  background-color:#1e202a;
+  color:#8b97c6;
 }
+.lt-dark-text.dt{
+  color: #fff;
+}
+.card.dt{
+  background-color:#252a41;
+}
+.card.dt:hover{
+  background-color:#333a56;
+}
+.header-mine.dt{
+  background-color:#1f212e;
+}
+/*Dark mode ends here*/
