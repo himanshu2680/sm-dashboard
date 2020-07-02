@@ -43,13 +43,14 @@ h1, h2, h3, h4, h5, h6{
   background-color: #f0f2fa;
   position: relative;
   border-style: none;
+  cursor: pointer;
 }
 .card:hover{
-  background-color:#;
+  background-color:#e1e3f0;
 }
 .card-main{
-  border-top-width: 5.5px;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-top-width: 0.35rem;
+  border-radius: 0.5rem;
   text-align: center;
   border-style: solid none none none;
 }
@@ -88,8 +89,20 @@ h1, h2, h3, h4, h5, h6{
     border-top-color: #178FF5;
   }
   .card-ig{
-    border-image: linear-gradient(to right, #fdc468, #df4996);
-    border-image-slice: 1;
+    /*border-image: linear-gradient(to right, #fdc468, #df4996);
+    border-image-slice: 1;*/ 
+    background-clip:padding-box;
+    position: relative;
+    border-color:transparent;
+  }
+  .card-ig::after{
+    position: absolute;
+    top: -0.35rem; bottom: 1px;
+    left: 1px; right: 1px;
+    background: linear-gradient(to right, #fdc468, #df4996);
+    content: '';
+    z-index: -1;
+    border-radius: 0.5rem;
   }
   .card-tw{
     border-top-color: #1da1f2;
@@ -160,7 +173,13 @@ input.toggle:checked::after{
   .hr{
     display:block;
   }
-  #dark-mode-toggle{
-
+  .subtitle.flex{
+    display:block;
   }
+  #dark-mode-toggle{
+    display:block;
+  }
+  input.toggle:hover{
+  background-color: l#aeb3cb;
+}
 }
