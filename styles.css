@@ -180,7 +180,7 @@ input.toggle:checked::after{
     display:block;
   }
   input.toggle:hover{
-  background-color: #aeb3cb;
+  background-image: linear-gradient(#aeb3cb, #aeb3cb);
   }
 }
 /*Dark Mode starts here*/
