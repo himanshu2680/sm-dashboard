@@ -97,8 +97,10 @@ h1, h2, h3, h4, h5, h6{
   }
   .card-ig::after{
     position: absolute;
-    top: -0.35rem; bottom: 1px;
-    left: 1px; right: 1px;
+    top: -0.35rem;
+    bottom: 1px;
+    left: 0px;
+    right: 1px;
     background: linear-gradient(to right, #fdc468, #df4996);
     content: '';
     z-index: -1;
@@ -181,6 +183,9 @@ input.toggle:checked::after{
   }
   input.toggle:hover{
   background-image: linear-gradient(#aeb3cb, #aeb3cb);
+  }
+  input.toggle:checked:hover{
+  background-image: linear-gradient(to right #378fe6, #3eda82);
   }
 }
 /*Dark Mode starts here*/
